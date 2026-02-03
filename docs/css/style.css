@@ -245,19 +245,16 @@ html body section.menu nav a:nth-child(7) {
   transition-delay: .025s;
 }
 html body section.content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  width: 100%;
   min-height: 100%;
-  min-width: 100%;
-  display: table;
-  background: #e23d3d;
+  background: transparent;
 }
 html body section.content label {
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
   padding: 1rem 1.5rem;
   background: #222;
   font-size: 2rem;
@@ -266,9 +263,6 @@ html body section.content label {
   cursor: pointer;
 }
 html body section.content h1 {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   font-size: 3rem;
   letter-spacing: 1px;
   color: #fff;
