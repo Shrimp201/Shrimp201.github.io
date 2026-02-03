@@ -116,13 +116,11 @@ p {
 }
 
 .GAGAGA{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: grid;
+  place-items: center;
   height: 600px;
   border: 1px solid black;
+  width: 50%;
+  
 }
 
-img {
-  width: 50%;
-}
