@@ -62,9 +62,7 @@ p {
   animation-timeline: --sticky-timeline;
 
 }
-.cover-flow__cover:hover {
-transform: rotate(-180deg);
-}
+
 
 .sticky-section_ {
   height: 300vh;
