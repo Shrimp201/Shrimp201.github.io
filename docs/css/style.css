@@ -128,6 +128,8 @@ p {
 
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
+  content: '☰';
+  display: inline-block;
 }
 
 html {
@@ -263,12 +265,18 @@ html body section.content {
 html body section.content label {
   position: fixed;
   z-index: 1000;
-  top: 0;
-  left: 0;
-  padding: 1rem 1.5rem;
+  top: 0;0.8rem 1.5rem;
   background: #222;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-right: 1px solid #333em;
   color: #fff;
   cursor: pointer;
 }
