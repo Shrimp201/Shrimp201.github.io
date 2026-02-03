@@ -1,12 +1,19 @@
 :root {
   --section-spacing-block: 10rem;
-  --container-slim-max-wdith: 50rem;
-  --container-max-wdith: 100rem;
+  --container-slim-max-width: 50rem;
+  --container-max-width: 100rem;
   background: #080e17;
   color: white;
   line-height: 1.6;
   font-family: system-ui;
 }
+
+html, body {
+  height: 100%;
+  background: #080e17;
+  color: white;
+}
+
 
 body {
   margin: 0;
@@ -33,7 +40,7 @@ p {
   margin: 0 auto;
   display: block;
   width: 31.25rem;
-  max-width: 80wv;
+  max-width: 80vw;
   -o-object-fit: cover;
      object-fit: cover;
   animation: linear cover both;
@@ -74,10 +81,10 @@ p {
 
 .container {
   margin-inline: auto;
-  max-width: var(--container-max-wdith);
+  max-width: var(--container-max-width);
 }
 .container--slim {
-  --container-max-wdith: var(--container-slim-max-wdith);
+  --container-max-width: var(--container-slim-max-width);
 }
 
 @keyframes cover {
