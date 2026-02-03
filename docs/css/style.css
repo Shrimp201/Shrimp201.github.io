@@ -1,14 +1,116 @@
-body {background-color:#2df106;}
- * {
-            margin: 0;
-            padding: 0;
-        }
-        .imgbox {
-            display: grid;
-            height: 100%;
-        }
-        .center-fit {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-        }
+:root {
+
+	--section-spacing-block: 10rem;
+	--container-slim-max-wdith: 50rem;
+	--container-max-wdith: 100rem;
+
+	background: #080e17;
+	color: white;
+	line-height: 1.6;
+	font-family: system-ui;
+}
+
+
+body {
+	margin: 0;
+}
+
+p {
+	margin: 2em 0;
+}
+
+.cover-flow {
+	perspective: 100rem;
+	// overflow: clip;
+	padding: 4rem 0;
+
+	&__track {
+		transform-style: preserve-3d;
+		display: grid;
+	}
+
+	&__space {
+		transform-style: preserve-3d;
+		view-timeline-name: --name-space;
+		view-timeline-axis: block;
+	}
+
+	&__cover {
+		margin: 0 auto;
+		display: block;
+		width: 31.25rem;
+		max-width: 80wv;
+		object-fit: cover;
+		animation: linear cover both;
+		animation-timeline: view(block);
+		transform-style: preserve-3d;
+		will-change: transform;
+		position: relative;
+		user-select: none;
+		border-radius: .5rem;
+		animation-timeline: --name-space;
+		// animation-range: contain 0% contain 100%;
+
+		/*
+		animation: cover auto linear both;
+		animation-range: contain 0% contain 100%;
+		animation-timeline: --sticky-timeline;
+		*/
+	}
+
+}
+
+
+.sticky-section_ {
+	height: 300vh;
+	position: relative;
+
+	view-timeline-name: --sticky-timeline;
+	view-timeline-axis: block;
+
+	&__stack {
+		position: sticky;
+		top: 0;
+	}
+
+}
+
+
+.section {
+	margin-block: 10rem;
+}
+
+.wrapping {
+	padding-inline: var(--wrapper-spacing);
+}
+
+
+.container {
+	margin-inline: auto;
+	max-width: var(--container-max-wdith);
+
+	&--slim {
+		--container-max-wdith: var(--container-slim-max-wdith);
+	}
+
+}
+
+
+@keyframes cover {
+	0% {
+		transform: translateY(-100%) rotateX(45deg);
+	}
+	35% {
+		transform: translateY(0) rotateX(45deg);
+	}
+	50% {
+		box-shadow: 0 0 1rem .5rem #00000080;
+		transform: rotateX(0deg) translateZ(14em) scale(1.2);
+	}
+	65% {
+		transform: translateY(0) rotateX(-45deg);
+	}
+	100% {
+		transform: translateY(100%) rotateX(-45deg);
+	}
+}
