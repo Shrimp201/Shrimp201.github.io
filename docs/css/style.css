@@ -57,10 +57,11 @@ p {
           user-select: none;
   border-radius: 0.5rem;
   animation-timeline: --name-space;
+  /*
   animation: cover auto linear both;
   animation-range: contain 0% contain 100%;
   animation-timeline: --sticky-timeline;
-
+*/
 }
 
 
