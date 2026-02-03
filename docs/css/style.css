@@ -131,6 +131,9 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 ul li {
@@ -145,7 +148,11 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
-  background-color: #111111;
+ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul li a.active {
+  background-color: #04AA6D;
 }
 
