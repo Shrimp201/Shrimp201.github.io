@@ -3,7 +3,7 @@
   --container-slim-max-width: 50rem;
   --container-max-width: 100rem;
   background: #080e17;
-  color: white;
+  color: #15631e;
   line-height: 1.6;
   font-family: system-ui;
 }
@@ -12,7 +12,7 @@ html, body {
   min-height: 100%;
   min-height: 100vh;
   background-color: #080e17;
-  color: #fff;
+  color: #15631e;
 }
 
 
@@ -20,7 +20,7 @@ body {
   margin: 0;
   min-height: 100vh;
   background-color: #080e17;
-  color: #fff;
+  color: #15631e;
 }
 
 p {
