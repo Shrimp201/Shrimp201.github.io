@@ -183,12 +183,22 @@ html body input[type="checkbox"]:checked ~ .menu nav a:nth-child(8) {
   -webkit-transition-delay: .7s;
   transition-delay: 0.7s;
 }
+html body {
+  overflow-x: hidden;
+}
 html body section.menu {
   position: fixed;
   z-index: 10;
   top: 0;
   bottom: 0;
   min-height: 100%;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  width: 12rem;
+}
+html body input[type="checkbox"]:checked ~ .menu {
+  transform: translateX(0);
 }
 html body section.menu nav {
   padding-top: 4rem;
