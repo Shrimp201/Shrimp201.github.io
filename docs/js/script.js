@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log(shrimp);
 
     if (shrimp === "yes") {
-        show_image("gag.png", 1900, 800, "gfg logo");
+        show_image("THESHRIMP.png", 1900, 800, "gfg logo");
     }
     else{
         show_image("egg.png", 1900, 900, "gfg logo"); 
