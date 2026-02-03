@@ -265,7 +265,9 @@ html body section.content {
 html body section.content label {
   position: fixed;
   z-index: 1000;
-  top: 0;0.8rem 1.5rem;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 1.5rem;
   background: #222;
   font-size: 1.8rem;
   line-height: 1.8rem;
@@ -273,11 +275,11 @@ html body section.content label {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 3.5rem;
   height: 3.5rem;
-  border-right: 1px solid #333em;
-  color: #fff;
+  border-right: 1px solid #333;
+}
   cursor: pointer;
 }
 html body section.content h1 {
