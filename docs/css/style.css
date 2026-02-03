@@ -44,7 +44,7 @@ p {
   margin: 0 auto;
   display: block;
   width: 31.25rem;
-  max-width: 80vw;
+  max-width: 90vw;
   -o-object-fit: cover;
      object-fit: cover;
   animation: linear cover both;
