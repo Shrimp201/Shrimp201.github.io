@@ -129,51 +129,10 @@ p {
   
 }
 
-
-<<<<<<< HEAD
 footer {
-=======
-.footer {
   position: fixed;
   left: 0;
   bottom: 0;
->>>>>>> parent of fb89d35 (edit)
   width: 100%;
   text-align: center;
-  background: linear-gradient(180deg, rgba(12,16,24,0.95), rgba(8,14,23,0.98));
-  color: #cfead6;
-  padding: 1.25rem 1rem;
-  box-shadow: 0 -8px 30px rgba(0,0,0,0.6);
-  font-size: 0.95rem;
-  position: relative;
-}
-
-footer .footer-inner {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer .footer-left,
-footer .footer-right {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  color: inherit;
-}
-
-footer a {
-  color: #9ee7b1;
-  text-decoration: none;
-  border-bottom: 1px dashed transparent;
-}
-footer a:hover { color: #ffffff; border-bottom-color: currentColor; }
-
-@media (max-width: 600px) {
-  footer .footer-inner { flex-direction: column; text-align: center; gap: 0.5rem; }
-  footer { font-size: 0.9rem; }
 }
