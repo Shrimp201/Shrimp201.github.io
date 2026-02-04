@@ -130,14 +130,7 @@ p {
 }
 
 
-<<<<<<< HEAD
 footer {
-=======
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
->>>>>>> parent of fb89d35 (edit)
   width: 100%;
   text-align: center;
   background: linear-gradient(180deg, rgba(12,16,24,0.95), rgba(8,14,23,0.98));
