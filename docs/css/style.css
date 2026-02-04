@@ -8,15 +8,11 @@
   font-family: system-ui;
 }
 
-/* Use border-box universally and prevent horizontal scroll */
-*, *::before, *::after { box-sizing: border-box; }
-
 html, body {
   min-height: 100%;
   min-height: 100vh;
   background-color: #080e17;
   color: #15631e;
-  overflow-x: hidden;
 }
 
 
