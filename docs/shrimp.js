@@ -17,6 +17,9 @@ let images = [
   'images/THESHRIMP.png'
 ];
 
+// cache cube element reference
+const cube = document.getElementById('cube');
+
 gsap.timeline()
   .set(".face", {
     rotateY: (i) => rots[i].ry,
