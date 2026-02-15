@@ -17,36 +17,36 @@ let images = [
   'images/THESHRIMP.png'
 ];
 
-// cache cube element reference
-const cube = document.getElementById('cube');
+document.addEventListener('DOMContentLoaded', () => {
+  const cube = document.getElementById('cube');
 
-gsap.timeline()
-  .set(".face", {
-    rotateY: (i) => rots[i].ry,
-    rotateX: (i) => rots[i].rx,
-    transformOrigin: "50% 50% -150px",
-    z: 150,
-    background: (i) => `url(${images[i]}) center / cover no-repeat`
-  })
-  .add(function(){
-    window.onmousemove = (e)=> {
-      
-      let winPercent = { 
-        x: e.clientX / innerWidth, 
-        y: e.clientY / innerHeight 
-      };
+  gsap.timeline()
+    .set(".face", {
+      rotateY: (i) => rots[i].ry,
+      rotateX: (i) => rots[i].rx,
+      transformOrigin: "50% 50% -150px",
+      z: 150,
+      background: (i) => `url(${images[i]}) center / cover no-repeat`
+    })
+    .add(function(){
+      window.onmousemove = (e)=> {
+        let winPercent = { 
+          x: e.clientX / innerWidth, 
+          y: e.clientY / innerHeight 
+        };
 
-      gsap.to(cube, {
-        duration:1,
-        rotationX:-180+360*winPercent.y,
-        rotationY:-180+360*winPercent.x
-      });
-      
-      gsap.to('.face', {
-        duration:1,
-        backgroundPosition:
-          -150+150*winPercent.x+'px '+
-          (-150*winPercent.y)+'px'
-      });
-    }  
-  });
+        gsap.to(cube, {
+          duration:1,
+          rotationX:-180+360*winPercent.y,
+          rotationY:-180+360*winPercent.x
+        });
+        
+        gsap.to('.face', {
+          duration:1,
+          backgroundPosition:
+            -150+150*winPercent.x+'px '+
+            (-150*winPercent.y)+'px'
+        });
+      }  
+    });
+});
