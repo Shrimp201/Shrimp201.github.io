@@ -9,12 +9,12 @@ let rots = [
 
 // local image paths
 let images = [
-  'images/THESHRIMP.png',
-  'images/THESHRIMP.png',
-  'images/THESHRIMP.png',
-  'images/THESHRIMP.png',
-  'images/THESHRIMP.png',
-  'images/THESHRIMP.png'
+  'images/squareShrimp.png',
+  'images/squareShrimp.png',
+  'images/squareShrimp.png',
+  'images/squareShrimp.png',
+  'images/squareShrimp.png',
+  'images/squareShrimp.png'
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
