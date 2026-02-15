@@ -5,6 +5,8 @@ html, body {
   background:#000;
 }
 
+body { margin: 0; }
+
 div {
   position: absolute;
   box-sizing:border-box;
@@ -23,10 +25,14 @@ div {
   height: 100%;
   width: 100%;
   transform-style: preserve-3d;
+  position: relative;
 }
 
 .face {
   height: 100%;
   width: 100%;
   user-select:none;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
 }
